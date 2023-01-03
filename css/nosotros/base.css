@@ -16,7 +16,8 @@ nav{
     display: grid;
     justify-content:space-between;
     align-items: center;
-    margin: auto;
+    /* margin: auto; */
+    margin-right: 10px;
 }
 
 header nav img{
@@ -104,9 +105,16 @@ nav ul.open {display: block;}
 .show {display: block;}
 
 
-/*body*/
+/*main tag*/
 section{
     margin: 10px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    width:80%;
+    margin: auto;
 }
 
 /*Footer*/
@@ -116,11 +124,10 @@ footer{
     justify-content: space-around;
     align-items: center;
     padding: 2.5em;
-    /* background-color: #6E8387; */
     padding: 20px;
     text-align: center;
     gap: .5rem;
-    background-color: #000807;
+    background-color:rgb(70, 69, 69);
     color: white;
 }
 
@@ -128,4 +135,8 @@ footer{
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+
+.footer_2 img{
+    width: 50px;
 }

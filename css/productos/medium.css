@@ -93,4 +93,25 @@
     .three{
         display:none;
     }
+
+    /*footer*/
+
+    footer{
+        clear:both;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left:12%;
+        padding-right:12%;
+        }
+
+    footer .footer_2{
+        align-items: center;
+        grid-column: 2/3;
+    }
+
+    footer p{
+        grid-column: 1/4;
+        grid-row:2/3;
+    }
 }
