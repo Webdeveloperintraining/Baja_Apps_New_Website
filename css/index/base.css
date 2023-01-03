@@ -1,0 +1,242 @@
+/*Header & general stuff */
+h1,h2,h3,h4,h5{
+    font-family: 'Source Sans Pro', sans-serif;
+    word-break:keep-all;
+    word-wrap:break-word;
+}
+
+p,li,a{
+    font-family: 'Cabin', sans-serif;
+    /* font-size:medium; */
+    
+}
+
+header{
+    background-color: #000807;
+    position: sticky;
+    /* z-index: 1; */
+    top: 0; 
+}
+/*Navigation bar*/
+nav{
+    display: grid;
+    /* flex-wrap: wrap; */
+    /* grid-template-columns:repeat(2,1fr); */
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+}
+
+header nav img{
+    margin-left:10px;
+    margin-right: 10px;
+    width:8rem;
+}
+
+.welcome{
+    max-width: 100%;
+}
+
+.three, .three.open {
+    grid-column: 2/3;
+    font-size: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 0;
+    color: white;
+    margin: 10px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    grid-column: 1/3;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding:.8rem 2vw;
+    color: white;
+}
+
+#drop-menu{
+    display:inline-block;
+    cursor:pointer;
+    color: white;
+    padding:.8rem 2vw;
+    margin: 0;
+    font-size: 16px;
+    /* width: 100%; */
+    /* text-overflow:clip; */
+}
+
+li.drop-trigger.dropdown.show,li.drop-trigger.dropdown{
+    cursor:pointer;
+}
+
+.dropdown-content{
+    background-color:#aa866b;
+    width: 100%;
+}
+
+.dropdown-content li{
+    /* margin-left: 10px; */
+    text-indent: 10px;
+    border-top: 1px solid #000807;
+}
+
+nav ul li.active{background-color:rgb(70, 69, 69); color:white; font-weight:bolder;} 
+/* nav ul li .drop-trigger:hover{background-color:rgb(70, 69, 69); color:white; font-weight:bolder;} */
+nav ul li.active a{color:white;font-weight:bolder;}
+/* nav ul li:hover{color:white;font-weight:bolder;} */
+nav ul li a:hover{color:white;font-weight:bolder;} 
+nav ul li a.content:hover{color:white;font-weight:bolder;} 
+
+
+ /* li.dropdown :hover{
+    font-weight:bolder;
+} */
+/* .dropdown:hover > .dropdown-content{
+    font-weight:bolder;
+} */
+
+ul > li.drop-trigger.dropdown:hover > span{
+    font-weight:bold;
+}
+
+/* li.drop-trigger.dropdown:hover >  #drop-menu:hover {
+    font-weight:bold;
+} */
+
+/* .dropdown-content li:hover{
+    background-color:rgb(70, 69, 69);
+    font-weight:bold;
+} */
+
+/* a.content:hover{color:white;font-weight:bolder;}  */
+
+nav ul{display: none;}
+nav ul.open {display: block;}
+
+.three span:nth-child(1) {display: block;}
+.three span:nth-child(2) {display: none;}
+
+.three.open span:nth-child(1) {display: none;}
+.three.open span:nth-child(2) {display: block;}
+
+.drop-trigger span:nth-child(1) {display: block;}
+.drop-trigger span:nth-child(2) {display: none;}
+
+.drop-trigger.show span:nth-child(1) {display: none;}
+.drop-trigger.show span:nth-child(2) {display: block;}
+
+.show {display: block;}
+
+/*Body*/
+
+body{
+    margin:auto;
+    background-color: rgb(255, 255, 255);
+}
+
+main section.introduction img{
+    display: block;
+    margin: auto;
+    max-width:100%;
+}
+
+section.company-description img{
+    display: block;
+    margin: auto;
+    max-width:100%;
+}
+
+section.company-description{
+    margin: 1.2rem;
+}
+
+section.welcome IMG{
+    width: 100%;
+}
+
+.offer{
+    background-color:#000807;
+    color: white;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    background-color: #000807;
+    color: white;
+    padding:1rem;
+    margin:auto;
+    text-decoration: none;
+    text-align: center;
+    max-width:5em;
+}
+
+section .btn:hover,.btn2:hover {background-color:rgb(70, 69, 69);}
+
+.btn2{
+    display: block;
+    background-color: white;
+    color: #000807;
+    padding:1rem;
+    margin:auto;
+    text-decoration: none;
+    text-align: center;
+    max-width:10em;
+}
+
+section .btn2:hover{ color: white;}
+
+section.introduction{
+    margin: 1.2rem;
+    }
+
+section.clients{
+    display: block;
+    margin: 1.2rem;
+    clear: both;
+}
+
+section.clients h3{
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin: 3rem;
+}
+/*Footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5em;
+    padding: 20px;
+    text-align: center;
+    gap: .5rem;
+    background-color:rgb(70, 69, 69);
+    color: white;
+}
+
+.footer_2{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer_2 img{
+    width: 50px;
+}
+
+
+/* .footer_2 img:nth-child(1){
+    background-color: white
+} */

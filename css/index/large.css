@@ -1,0 +1,58 @@
+@media only screen and (min-width:68rem){
+/*Navigation bar*/
+
+    nav ul li a{
+        font-size: 14px;
+        padding: 2rem;
+    } 
+
+    li.drop-trigger.dropdown{
+        min-width: 14rem;
+    }
+
+    a.content{
+        padding: 1.5rem;
+    }
+
+    span#drop-menu.drop-trigger{
+        padding-top:2rem;
+        padding-bottom:2rem;
+    }
+
+/*Main tag*/
+
+    img.welcome {
+        width:100%;
+        max-height:80vw;
+    }
+
+    section.company-description{
+        display: block;
+        margin: auto;
+        max-width:70rem;
+    }
+
+    section.company-description a.btn{
+        margin-bottom: 30px;
+    }
+
+    section.company-description img{
+        max-width:600px;
+        margin-bottom:30px;
+    }
+
+    /* section.offer{
+        max-width:99%;
+    } */
+
+    main section.introduction{
+        display: block;
+        margin: auto;
+        max-width:60rem;
+    }
+
+    main section.introduction img{
+        max-width:400px;
+    }
+
+}
