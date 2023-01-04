@@ -12,6 +12,9 @@
         <link rel="stylesheet" href=css/index/base.css>
         <link rel="stylesheet" href=css/index/medium.css>
         <link rel="stylesheet" href=css/index/large.css>
+        <script src="./js/slideshow.js" defer></script>
+        <script src="./js/navigator-button.js" defer ></script>
+        <script src="js/dropdown.js" defer></script>
         <title>Inicio</title>
     </head>
     <body>
@@ -37,8 +40,8 @@
     </header>
     <main>
         <picture>
-            <source media="(min-width:60rem)" srcset="images/bienvenido_img_large.jpg">  
-            <source media="(min-width:50rem)" srcset="images/bienvenido_img_medium.jpg">    
+            <source media="(min-width:50rem)" srcset="images/bienvenido_img_large.jpg">  
+            <source media="(min-width:36rem)" srcset="images/bienvenido_img_medium.jpg">    
             <img  class="welcome" src="images/bienvenido_img_small.jpg" alt="personas_planificando_algo">
         </picture>
         <section class="company-description">
@@ -75,7 +78,31 @@
         
         <section class="clients">
             <h2>Nuestros clientes</h2>
-            <h3>Trabajo en progreso</h3>
+            <div class="images-slideshow">
+
+                <div class="imageSlides fade">
+                    <img src="images\MarcillaLogotipoTijuana02.jpg" alt="logo_de_Marcilla">
+                </div>
+                
+                <!-- <div class="imageSlides fade">
+                    <img src="images\yonke_el_cuñado_logo2.jpg" alt="logo_de_Yonke_el_Cuñado">
+                </div> -->
+                
+                <!-- <div class="imageSlides fade">
+                    <img src="images\logouttbig.png" alt="logo_de_UTT">
+                </div> -->
+                
+                <div class="imageSlides fade">
+                    <img src="images\ortegas_buffet_logo.png" alt="logo_de_ortegas_buffett">
+                </div>
+                
+                <div class="imageSlides fade">
+                    <img src="images\lazaro_log.jpg" alt="logo_de_preparatoria_Lazaro_Cardenas">
+                </div>
+                <a id="previousBtn" onclick="setSlides(-1)" class="slider-btn previous">&lt;</a>
+                <a id="nextBtn" onclick="setSlides(1)" class="slider-btn next">&gt;</a>
+            </div>
+
         </section>
     </main>
     <footer>
@@ -86,7 +113,5 @@
         <a href="https://www.facebook.com/Baja-Apps-Tech-101169642827506" target="_blank"><img src="images/facebook_logo_small.png" alt="facebook_logo"></a>
         </div>    
     </footer>
-    <script src="./js/navigator-button.js"></script>
-    <script src="js/dropdown.js"></script>
 </body>
 </html>

@@ -99,9 +99,9 @@
         margin: auto;
     }
 
-    picture img.welcome{
-        width:100%;
-    }
+    /* picture img.welcome{
+        max-width:100%;
+    } */
 
     section.company-description img{
         float:left;
