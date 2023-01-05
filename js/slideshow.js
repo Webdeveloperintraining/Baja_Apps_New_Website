@@ -1,12 +1,7 @@
 const previous= document.getElementById('previousBtn');
 const next=document.getElementById('nextBtn');
-
 var currentIndex = 1;
 displaySlides(currentIndex);
-
-function setSlides(num) {
-    displaySlides(currentIndex += num);
-}
 
 function displaySlides(num){
     var x;
@@ -19,5 +14,5 @@ function displaySlides(num){
     slides[currentIndex - 1].style.display="block";
 }
 
-previous.addEventListener("click",setSlides(-1));
-next.addEventListener("click",setSlides(1));
+previous.addEventListener("click",()=> displaySlides(currentIndex += -1));
+next.addEventListener("click",()=> displaySlides(currentIndex += 1));

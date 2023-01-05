@@ -7,6 +7,7 @@
         align-items: center;
         justify-content: space-between;
         font-size: 14px;
+        margin-right: 10px;
         /* grid-template-columns: 1fr 2fr; */
     }
 
@@ -102,6 +103,11 @@
     /* picture img.welcome{
         max-width:100%;
     } */
+
+    img.welcome {
+        width:100%;
+        max-height:58vw;
+    }
 
     section.company-description img{
         float:left;

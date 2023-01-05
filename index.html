@@ -15,7 +15,7 @@
         <script src="./js/slideshow.js" defer></script>
         <script src="./js/navigator-button.js" defer ></script>
         <script src="js/dropdown.js" defer></script>
-        <title>Inicio</title>
+        <title>Baja Apps | Inicio</title>
     </head>
     <body>
     <header>
@@ -81,26 +81,56 @@
             <div class="images-slideshow">
 
                 <div class="imageSlides fade">
-                    <img src="images\MarcillaLogotipoTijuana02.jpg" alt="logo_de_Marcilla">
+                    <figure>
+                        <picture>
+                            <source media="(min-width:40em )" srcset="images\marcilla_logotipo_tijuana_medium.jpg">
+                            <img src="images\marcilla_logotipo_tijuana_small.jpg" alt="logo_de_Marcilla">
+                            <figcaption>Marcilla e Hijos</figcaption>
+                        </picture>
+                    </figure>
                 </div>
                 
                 <!-- <div class="imageSlides fade">
-                    <img src="images\yonke_el_cuñado_logo2.jpg" alt="logo_de_Yonke_el_Cuñado">
-                </div> -->
-                
-                <!-- <div class="imageSlides fade">
-                    <img src="images\logouttbig.png" alt="logo_de_UTT">
+                    <figure>
+                        <picture>
+                            <source media="(min-width: )" srcset="">
+                            <img src="images\yonke_el_cuñado_logo2.jpg" alt="logo_de_Yonke_el_Cuñado">
+                        </picture>
+                        <figcaption></figcaption>
+                    </figure>
                 </div> -->
                 
                 <div class="imageSlides fade">
-                    <img src="images\ortegas_buffet_logo.png" alt="logo_de_ortegas_buffett">
+                    <figure>
+                        <picture>
+                            <source media="(min-width:40em)" srcset="">
+                            <img src="images\paptek_logo_small.png" alt="logo_de_Paptek">
+                        </picture>
+                        <figcaption>Paptek</figcaption>
+                    </figure>
                 </div>
                 
                 <div class="imageSlides fade">
-                    <img src="images\lazaro_log.jpg" alt="logo_de_preparatoria_Lazaro_Cardenas">
+                    <figure>
+                        <picture>
+                            <source media="(min-width:40em )" srcset="">
+                            <img src="images\ortegas_buffet_logo_small.jpg" alt="logo_de_ortegas_buffett">
+                            <figcaption>Ortega's Buffet</figcaption>
+                        </picture>
+                    </figure>
                 </div>
-                <a id="previousBtn" onclick="setSlides(-1)" class="slider-btn previous">&lt;</a>
-                <a id="nextBtn" onclick="setSlides(1)" class="slider-btn next">&gt;</a>
+                
+                <div class="imageSlides fade">
+                    <figure>
+                        <picture>
+                            <source media="(min-width:40em )" srcset="">
+                            <img src="images\logo_lazaro_cardenas_small.png" alt="logo_de_preparatoria_Lazaro_Cardenas">
+                        </picture>
+                        <figcaption>Preparatoria Federal Lazaro cardenas</figcaption>
+                    </figure>
+                </div>
+                <a id="previousBtn" class="slider-btn previous">&lt;</a>
+                <a id="nextBtn" class="slider-btn next">&gt;</a>
             </div>
 
         </section>

@@ -9,6 +9,8 @@ p,li,a{
 /*header*/
 header{
     background-color: #000807;
+    position: sticky;
+    top: 0; 
 }
 
 /*Navigation bar*/
@@ -17,7 +19,6 @@ nav{
     justify-content:space-between;
     align-items: center;
     /* margin: auto; */
-    margin-right: 10px;
 }
 
 header nav img{
@@ -38,7 +39,7 @@ header nav img{
     cursor: pointer;
     padding-left: 0;
     color: white;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 nav ul {
@@ -110,10 +111,10 @@ section{
     margin: 1rem;
 }
 
-img{
+main section img{
     display: block;
     max-width: 100%;
-    width:80%;
+    width:65%;
     margin: auto;
 }
 
@@ -139,6 +140,10 @@ footer{
     gap: .5rem;
     background-color:rgb(70, 69, 69);
     color: white;
+}
+
+footer a img{
+    width: 80%;
 }
 
 .footer_2{

@@ -25,7 +25,6 @@ nav{
     justify-content:space-between;
     align-items: center;
     /* margin: auto; */
-    margin-right: 10px;
 }
 
 header nav img{
@@ -46,7 +45,7 @@ header nav img{
     cursor: pointer;
     padding-left: 0;
     color: white;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 nav ul {
@@ -179,7 +178,7 @@ section.welcome IMG{
     margin:auto;
     text-decoration: none;
     text-align: center;
-    max-width:5em;
+    max-width:8em;
 }
 
 section .btn:hover,.btn2:hover {background-color:rgb(70, 69, 69);}
@@ -222,21 +221,23 @@ section.clients h3{
 section.clients img {
     margin: auto;
     display: block;
-    width: 50%;
+    /* width: 50%; */
 }
 
 /* Our main images-slideshow container */
 .images-slideshow {
-    max-width: 400px;
+    /* max-width: 400px; */
     position: relative;
     margin: auto;
+    /* border: #000807 10px dashed; */
+    border: 4mm ridge rgba(204, 128, 57, 0.6);
   }
 
 /*Style for ">" next and "<" previous buttons */
 .slider-btn{
     cursor: pointer;
     position: absolute;
-    top: 100px;
+    top: 50%;
     width: auto;
     padding: 8px 16px;
     margin-top: -22px;
@@ -284,6 +285,10 @@ footer{
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+
+footer a img{
+    width: 80%;
 }
 
 .footer_2 img{

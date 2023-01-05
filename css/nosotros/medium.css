@@ -8,6 +8,7 @@
         align-items: center;
         justify-content: space-between;
         font-size: 14px;
+        margin-right: 10px;
         /* grid-template-columns: 1fr 2fr; */
     }
     
@@ -92,6 +93,12 @@
     
     .three{
         display:none;
+    }
+
+/*main*/
+    img{
+        float: right;
+        width: 50%;
     }
 
 /*footer*/
