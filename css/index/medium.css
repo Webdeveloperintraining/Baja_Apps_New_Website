@@ -142,6 +142,22 @@
         padding-top:.7rem
     }
 
+    main section.clients{
+        text-align: center;
+    }
+
+    .previous {
+        left: 13vw;
+      }
+    
+    .next {
+        right: 13vw;
+      } 
+
+    .images-slideshow {
+        max-width: 80vw;
+    }
+
 /*footer*/
 
     footer{

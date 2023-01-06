@@ -114,7 +114,8 @@ section{
 main section img{
     display: block;
     max-width: 100%;
-    width:65%;
+    /* width:65%; */
+    /* width: 60%; */
     margin: auto;
 }
 
@@ -126,8 +127,17 @@ section details summary{
     padding: 20px;
 }
 
+main section ul li{
+    margin: 1.2rem;
+}
 
+main section ul li:nth-child(1){
+    margin-top: 0rem;
+}
 
+/* main section ul{
+    
+} */
 /*Footer*/
 footer{
     display: flex;

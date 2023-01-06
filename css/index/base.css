@@ -230,7 +230,6 @@ section.clients img {
     position: relative;
     margin: auto;
     /* border: #000807 10px dashed; */
-    border: 4mm ridge rgba(204, 128, 57, 0.6);
   }
 
 /*Style for ">" next and "<" previous buttons */

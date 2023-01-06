@@ -1,4 +1,4 @@
-@media only screen and (min-width:68rem){
+@media only screen and (min-width:66rem){
 /*Navigation bar*/
 
     nav ul li a{
@@ -50,9 +50,15 @@
         margin: auto;
         max-width:60rem;
     }
-
-    main section.introduction img{
-        max-width:400px;
+    section.clients img{
+        max-width: 60%;
     }
 
+    .previous {
+        left:10vw;
+      }
+    
+    .next {
+        right:10vw;
+      } 
 }

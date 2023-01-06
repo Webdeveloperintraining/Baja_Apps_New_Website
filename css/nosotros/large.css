@@ -19,5 +19,10 @@
             padding-bottom:2rem;
         }
 
+        main{
+            display: block;
+            margin: auto;
+            max-width: 68rem;
+        }
 
     }    
