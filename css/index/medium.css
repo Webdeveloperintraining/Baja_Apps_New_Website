@@ -9,10 +9,12 @@
         font-size: 14px;
         margin-right: 10px;
         /* grid-template-columns: 1fr 2fr; */
+        transition: all .4s .2s;
     }
 
     header nav img{
         width:70%;
+        transition: all .4s .2s;
     }
 
     p,a.btn, a.btn2{
@@ -30,10 +32,6 @@
         max-width: 12rem;
     }
 
-    /* picture img. {
-        width:70%;
-    } */
-
     nav ul{
         grid-column: 2/3;
         grid-row: 1/2;
@@ -46,7 +44,7 @@
         padding-bottom:3vw;
     } 
 
-    span#drop-menu.drop-trigger{
+    span#drop-menu.drop-trigger,span#drop-menu2.drop-trigger2{
         /* padding-top:2em;
         padding-bottom:2em; */
         padding-top:3vw;
@@ -60,18 +58,24 @@
         align-items: center;
         justify-content: center;
         /* margin-left: 2vw; */
+        
     } 
     
     /* li.drop-trigger.dropdown{
         min-width: 12rem;
     } */
 
-    #drop-menu{
+    #drop-menu,#drop-menu2{
         display:inline-block;
         text-align:left;
         font-size: 14px;
         margin: 0;
     }
+
+    #drop-menu2{
+        min-width:4rem;
+    }
+
     .dropdown{
         width:100%;
         position: relative;
@@ -80,6 +84,11 @@
     .dropdown-content{
         position: absolute;
         width:inherit;
+    }
+
+    .dropdown-content2{
+        position: absolute;
+        max-width:10em;
     }
 
     a.content{
@@ -105,8 +114,12 @@
     } */
 
     img.welcome {
-        width:100%;
-        max-height:58vw;
+        /* width:100%; */
+        /* width: 58vw; */
+        /* height: 60vw; */
+        width: 100%;
+        /* max-height:58vw;
+        max-width:58vw; */
     }
 
     section.company-description img{

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cabin&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/servicios/base.css">
@@ -15,56 +15,104 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="images/baja_apps_2_medium.png" alt="baja_apps_logo"></a>
+            <a href="index.html"><img src="images/BajaAppsTech-logo.png" alt="baja_apps_logo"></a>
             <button class="three"><span>&#9776;</span><span>&#215;</span></button>
             <ul class="main-nav">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
-                <li class="drop-trigger dropdown active" onclick="dropContent()"><span class="drop-trigger" id="drop-menu">Productos & Servicios &#8744;</span>
+                <li class="drop-trigger dropdown" onclick="dropContent()"><span class="drop-trigger" id="drop-menu">Productos & Servicios &#8744;</span>
                     <ul id="service_dropdown" class="dropdown-content">
                         <li><a class="content" href="productos.html">Productos</a></li>
                         <li class="active"><a class="content" href="servicios.html">Servicios</a></li>
                         <li><a class="content" href="timbres.html">Comprar timbres</a></li>
                     </ul>
                 </li>
-                <li><a href="soporte.html">Soporte</a></li>
+                <li class="drop-trigger2" onclick="dropContent2()"> <span class="drop-trigger2" id="drop-menu2">Soporte &#8744;</span>
+                    <ul id="support_dropdown" class="dropdown-content2">
+                        <li><a class="content" href="soporte.html">Soporte</a></li>
+                        <li><a class="content" href="http://sistemas.masqfactura.com/grid_Videos_1/" target="_blank">Modificaciones</a></li>
+                    </ul>
+                </li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>En BAJA APPS TECH le ofrecemos las siguientes soluciones:</h1>
+        <section>
+            <h1>En BAJA APPS TECH le ofrecemos las siguientes soluciones:</h1>
         
-        <h2>Desarrollo de Software a la medida</h2>
-        <p>Diseñamos y creamos soluciones informáticas que se ajustan a  las necesidades del cliente, que le permiten estar a la vanguardia y cumplir con las exigencias del mercado y la competencia.</p>
-        <p>Estos mecanismos se integran de manera natural a los sistemas con los que actualmente cuenta su empresa, aprovechando al máximo cada recurso y sin tener que comprar nuevos productos.</p>
+            <h2>Desarrollo de Software a la medida</h2>
+            <p>Diseñamos y creamos soluciones informáticas que se ajustan a  las necesidades del cliente, que le permiten estar a la vanguardia y cumplir con las exigencias del mercado y la competencia.</p>
+            <p>Estos mecanismos se integran de manera natural a los sistemas con los que actualmente cuenta su empresa, aprovechando al máximo cada recurso y sin tener que comprar nuevos productos.</p>
+        </section>
+
+        <section>
+            <h2>Venta de Software</h2>
+            <div class="duo">
+                <picture >
+                    <source media="(min-width:55rem)" srcset="images/logo-BioReg.jpg">
+                    <source media="(min-width:36rem)" srcset="images/logo-bioreg_medium.jpg">
+                    <img src="images/logo-bioreg_small.jpg" alt="bioreg_logo">
+                </picture>
+                <picture>
+                    <source media="(min-width:55rem)" srcset="images/logo-Qfactura.jpg">
+                    <source media="(min-width:36rem)" srcset="images/logo-qfactura_medium.jpg">
+                    <img src="images/logo-qfactura_small.jpg" alt="+qfactura_logo">
+                </picture>
+            </div>
+            <p>Contamos con un área especializada de ventas de los productos propietarios (BioReg, +Qfactura), así como el servicio de adaptación de Software a sistemas propietarios de +Qfactura, conforme a las necesidades de cada empresa y el desarrollo tecnológico con el que cuenta actualmente.</p>
+        </section>
+
+        <section>
+            <h2>Mantenimiento a Bases de Datos SQL Server</h2>
+            <p>Nuestros profesionales tienen más de una década de experiencia en Bases de Datos SQL Server, desde las versiones 7 hasta 2008.</p>
+        </section>
+
+        <section>
+            <h2>Desarrollo de Páginas WEB</h2>
+            <picture class="single">
+                <source media="(min-width:55rem)" srcset="images/web_development_large.jpg">
+                <source media="(min-width:36rem)" srcset="images/web_development_medium.jpg">
+                <img src="images/web_development_small.jpg" alt="computer_with_HTML_code">
+            </picture>
+            <h3>Ofrecemos los siguientes servicios :</h3>
+            <ul>
+                <li>Diseño de Banners</li>
+                <li>Diseño de Promos para Email</li>
+                <li>Diseño y Análisis de aplicaciones web</li>
+                <li>Programación .NET, ASP, Java Script, Visual Basic, C++, Delphi, PHP</li>
+                <li>Manejo de Base de Datos SQL, ACCESS, MySQL</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Desarrollo de Sistemas Biométricos Huella y Rostro</h2>
+            <picture class="single">
+                <source media="(min-width:55rem)" srcset="images/biometric_large.jpg">
+                <source media="(min-width:36rem)" srcset="images/biometric_medium.jpg">
+                <img src="images/biometric_small.jpg" alt="A_person_touching_fingerprint_device">
+            </picture>
+            <p>Tenemos desarrollos de sistemas biométricos a la medida, enfocados a la identificación y/o verificación de la identidad de las personas a partir de características únicas.</p>
+        </section>
+
+        <section>
+            <h2>Consultoría en el Área Tecnológica</h2>
+            <picture class="single">
+                <source media="(min-width:55rem)" srcset="images/expert_programmer_large.jpg">
+                <source media="(min-width:36rem)" srcset="images/expert_programmer_medium.jpg">
+                <img src="images/expert_programmer_small.jpg" alt="person_looking_reading_data">
+            </picture>
+            <p>Contamos con un grupo de expertos en programación y tecnologías de la información disponible para ayudarle a aprovechar al máximo las herramientas informáticas y despejar todas sus dudas sobre su funcionamiento.</p>
+        </section>
         
-        <h2>Venta de Software</h2>
-        <p>Contamos con un área especializada de ventas de los productos propietarios (BioReg, +Qfactura), así como el servicio de adaptación de Software a sistemas propietarios de +Qfactura, conforme a las necesidades de cada empresa y el desarrollo tecnológico con el que cuenta actualmente.</p>
-        
-        <h2>Mantenimiento a Bases de Datos SQL Server</h2>
-        <p>Nuestros profesionales tienen más de una década de experiencia en Bases de Datos SQL Server, desde las versiones 7 hasta 2008.</p>
-        
-        <h2>Desarrollo de Páginas WEB</h2>
-        <ul>
-            <li>Diseño de Banners</li>
-            <li>Diseño de Promos para Email</li>
-            <li>Diseño y Análisis de aplicaciones web</li>
-            <li>Programación .NET, ASP, Java Script, Visual Basic, C++, Delphi, PHP</li>
-            <li>Manejo de Base de Datos SQL, ACCESS, MySQL</li>
-        </ul>
-        
-        <h2>Desarrollo de Sistemas Biométricos Huella y Rostro</h2>
-        <p>Tenemos desarrollos de sistemas biométricos a la medida, enfocados a la identificación y/o verificación de la identidad de las personas a partir de características únicas.</p>
-        
-        <h2>Consultoría en el Área Tecnológica</h2>
-        <p>Contamos con un grupo de expertos en programación y tecnologías de la información disponible para ayudarle a aprovechar al máximo las herramientas informáticas y despejar todas sus dudas sobre su funcionamiento.</p>
-        
-        <h3>¡Si está interesado en algún desarrollo de facturación electrónica o software administrativo específico para su empresa, contáctenos, tenemos una solución para usted!</h3>
-        
+        <section class="offer">
+            <h3>¡Si está interesado en algún desarrollo de facturación electrónica o software administrativo específico para su empresa, contáctenos, tenemos una solución para usted!</h3>
+            <a href="contacto.html" class="btn2"> Nuestro Contacto</a>
+        </section>
+
     </main>
     <footer>
-        <a href="index.html"><img src="images/baja_apps_2_medium.png" alt="dark_baja_apps_logo"></a>
+        <a href="index.html"><img src="images/BajaAppsTech-logo.png" alt="dark_baja_apps_logo"></a>
         <p>&#169;Baja Apps Tech | Todos los derechos reservados</p>
         <div class="footer_2">
         <a href="https://www.youtube.com/@baja_apps_tech/featured" target="_blank"><img src="images/youtube_logo_small.png" alt="youtube_logo"></a>

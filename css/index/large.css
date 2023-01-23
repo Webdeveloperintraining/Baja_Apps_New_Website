@@ -14,9 +14,13 @@
         padding: 1.5rem;
     }
 
-    span#drop-menu.drop-trigger{
+    span#drop-menu.drop-trigger,span#drop-menu2.drop-trigger2{
         padding-top:2rem;
         padding-bottom:2rem;
+    }
+
+    .dropdown-content2{
+        max-width:11em;
     }
 
 /*Main tag*/
@@ -50,6 +54,7 @@
         margin: auto;
         max-width:60rem;
     }
+
     section.clients img{
         max-width: 60%;
     }

@@ -1,21 +1,52 @@
 @media only screen and (min-width:68rem){
-    /*Navigation bar*/
-    
-        nav ul li a{
-            font-size: 14px;
-            padding: 2rem;
-        } 
-    
-        li.drop-trigger.dropdown{
-            min-width: 14rem;
-        }
-    
-        a.content{
-            padding: 1.5rem;
-        }
-    
-        span#drop-menu.drop-trigger{
-            padding-top:2rem;
-            padding-bottom:2rem;
-        }
-    }    
+/*Navigation bar*/
+
+nav ul li a{
+    font-size: 14px;
+    padding: 2rem;
+} 
+
+li.drop-trigger.dropdown{
+    min-width: 14rem;
+}
+
+a.content{
+    padding: 1.5rem;
+}
+
+span#drop-menu.drop-trigger,span#drop-menu2.drop-trigger2{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+.dropdown-content2{
+    max-width:11em;
+}
+
+/*Main*/
+
+main section{
+    display: block;
+    margin: auto;
+    max-width: 70%;
+}
+
+main section.offer{
+    display: block;
+    margin:0;
+    max-width: 100%;
+    margin-bottom:1rem ;
+}
+
+
+
+/* picture img {
+    max-width: 30%;
+} */
+
+/* main picture.single img{
+    max-width: 30%;
+    float: right;
+} */
+
+}    
