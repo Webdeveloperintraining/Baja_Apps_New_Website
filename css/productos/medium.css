@@ -99,12 +99,44 @@ li.drop-trigger.dropdown{
     display:none;
 }
 /*Body*/
+main{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
 
-section img{
-    float: left;
+article section p{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+section img.software{
+    float: right;
     width: 30%;
     margin: 1rem;
     margin-bottom: 0.5rem;
+}
+
+/* main section ul li{
+    word-wrap: break-word;
+    word-break: break-all;
+} */
+
+article iframe{
+    width: 60%;
+    height: 25r;
+}
+
+div.reports  {
+    display: flex;
+    flex-direction:row;
+}
+
+img.price-table{
+    max-width: 70%;
+}
+
+div.reports #myImg{
+    width:100%;
 }
 
 /*footer*/

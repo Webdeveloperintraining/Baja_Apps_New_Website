@@ -1,27 +1,26 @@
 @media only screen and (min-width:68rem){
-/*Navigation bar*/
-
-nav ul li a{
-    font-size: 14px;
-    padding: 2rem;
-} 
-
-li.drop-trigger.dropdown{
-    min-width: 14rem;
-}
-
-a.content{
-    padding: 1.5rem;
-}
-
-span#drop-menu.drop-trigger,span#drop-menu2.drop-trigger2{
-    padding-top:2rem;
-    padding-bottom:2rem;
-}
-
-.dropdown-content2{
-    max-width:11em;
-}
+    /*Navigation bar*/
+    nav ul li a{
+        font-size: 14px;
+        padding: 2rem;
+    } 
+    
+    li.drop-trigger.dropdown{
+        min-width: 15rem;
+    }
+    
+    a.content{
+        padding: 1.5rem;
+    }
+    
+    span#drop-menu.drop-trigger,span#drop-menu2.drop-trigger2{
+        padding-top:2rem;
+        padding-bottom:2rem;
+    }
+    
+    .dropdown-content2{
+        max-width:11em;
+    }
 
 
 main{
@@ -30,10 +29,12 @@ main{
     max-width: 68rem;
 }
 
-div.contact-form{
+div.label-design{
     display: block;
     margin: auto;
-    max-width: 800px;
+    max-width: 650px;
 }
+
+
 
 }    

@@ -56,7 +56,7 @@ header nav img:hover{transform: scale(1.2);  transition: all .4s .2s;}
     transition: transform .4s .2s;
 }
 
-.three:hover, .three.open:hover{transform: scale(1.2); transition: transform .4s .2s;} 
+.three:hover, .three.open:hover{transform: scale(1.1); transition: transform .4s .2s;} 
 
 nav ul {
     padding: 0;
@@ -139,17 +139,19 @@ nav ul.open {display: block;}
 main img{
     display: none;
     box-shadow:2px 8px 10px black;
+    transition: all 1s;
 }
 
 section{
     margin: 1rem;
+    transition: all 1s;
 }
 
 main section ul li{
     margin: 15px;
 }
 
-/* div.contact-form{
+/* div.label-design{
     display: block;
     margin: auto;
     max-width: 400px;
@@ -192,12 +194,95 @@ textarea{
     border-radius: 5px;
 }
 
+/*CAPTCHA */
+#captchaBackground {
+    max-height:20rem;
+    max-width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    /* border: #000807 solid 1px; */
+}
+
+#captcha {
+    height: 80%;
+    width: 80%;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin: auto;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submitButton {
+    background-color:white;
+    color:#000807;
+    padding:1rem;
+    /* margin-top: 2em; */
+    margin-bottom: 2em;
+    margin-right: 1em;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    box-shadow:2px 8px 10px black;
+    transition: all 1s;
+    cursor: pointer;
+    border: none;
+}
+
+#refreshButton {
+    background-color:white;
+    color:#000807;
+    padding:1rem;
+    /* margin-top: 1em; */
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    box-shadow:2px 8px 10px black;
+    transition: all 1s;
+    cursor: pointer;
+    border: none;
+}
+
+#refreshButton:hover,#submitButton:hover{
+    background-color: rgb(70, 69, 69);
+    color: white;
+    transition: all .5s;
+}
+
+#textBox,#output {
+    padding: .75rem;
+    font-family: 'Cabin', sans-serif;
+}
+
+.incorrectCaptcha {
+    color: #FF0000;
+}
+
+.correctCaptcha {
+    color: #2dac24;
+}
+/* END CAPTCHA */
+
 .btn{
     display: block;
     background-color: #000807;
     color: white;
     padding:1rem;
     margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
     text-decoration: none;
     text-align: center;
     max-width:8em;
@@ -205,12 +290,14 @@ textarea{
     box-shadow:2px 8px 10px black;
     transition: all 1s;
     cursor: pointer;
+    border: none;
 } 
 
 .btn:hover{
     background-color: rgb(70, 69, 69);
     transition: all .5s;
 }
+
 
 /*Footer*/
 footer{

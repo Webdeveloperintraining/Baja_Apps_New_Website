@@ -56,7 +56,7 @@ header nav img:hover{transform: scale(1.2);  transition: all .4s .2s;}
     transition: transform .4s .2s;
 }
 
-.three:hover, .three.open:hover{transform: scale(1.2); transition: transform .4s .2s;} 
+.three:hover, .three.open:hover{transform: scale(1.1); transition: transform .4s .2s;} 
 
 nav ul {
     padding: 0;
@@ -140,28 +140,34 @@ nav ul.open {display: block;}
 body{
     margin:auto;
     background-color: rgb(255, 255, 255);
-    
 }
 
-main section.introduction img{
+/* section p{
+    margin-left: 2vw;
+    margin-right: 2vw; 
+} */
+   
+section.introduction img,section.company-description img{
     display: block;
     margin: auto;
-    max-width:100%;
+    max-width:70%;
     box-shadow:2px 8px 10px black;
+    transition: all 1s;
 }
 
-section.company-description img{
+/* section.company-description img{
     display: block;
     margin: auto;
-    max-width:100%;
+    max-width:90%;
     box-shadow:2px 8px 10px black;
-}
+    transition: all 1s;
+} */
 
 section.company-description{
     margin: 1.2rem;
 }
 
-section.welcome IMG{
+section.welcome img{
     width: 100%;
 }
 
@@ -203,12 +209,14 @@ section .btn2:hover{ color: white;}
 
 section.introduction{
     margin: 1.2rem;
-    }
+}
 
 section.clients{
     display: block;
     margin: 1.2rem;
     clear: both;
+    transition: all 1s; 
+    padding-top: 10px;
 }
 
 section.clients h3{
@@ -226,9 +234,11 @@ section.clients h3{
 section.clients img {
     margin: auto;
     display: block;
-    box-shadow:2px 8px 10px black;
+    transition: all 1s;
     /* width: 50%; */
 }
+
+section.clients img:hover {box-shadow:2px 8px 10px black; transition: all 1s;}
 
 /* Our main images-slideshow container */
 .images-slideshow {

@@ -6,7 +6,7 @@ nav ul li a{
 } 
 
 li.drop-trigger.dropdown{
-    min-width: 14rem;
+    min-width: 15rem;
 }
 
 a.content{
@@ -29,5 +29,10 @@ span#drop-menu.drop-trigger,span#drop-menu2.drop-trigger2{
     max-width: 70%;
     }
 
+    main section img{
+        /* max-width: 70%; */
+        width: 35rem;
+    }
+    
 
 }    

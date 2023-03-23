@@ -13,7 +13,7 @@
     }
 
     header nav img{
-        width:70%;
+        width:80%;
         transition: all .4s .2s;
     }
 
@@ -58,7 +58,6 @@
         align-items: center;
         justify-content: center;
         /* margin-left: 2vw; */
-        
     } 
     
     /* li.drop-trigger.dropdown{
@@ -125,10 +124,15 @@
     section.company-description img{
         float:left;
         margin:15px;
-        margin-bottom:0px;
+        margin-bottom:10px;
         width:60%;
-        max-width: 75%;
+        min-width: 10rem;
+        max-width: 25rem;
     }
+
+    /* section.company-description P{
+      clear: left;
+    }  */
 
     .offer{
         clear:both;
@@ -137,6 +141,7 @@
     a.btn{
         display:flex;
         justify-content: center;
+        margin-bottom: 20px;
     }
 
     main section.introduction img{
@@ -150,6 +155,12 @@
     main section.company-description h2{
         padding-top:.7rem
     }
+
+    /* main section.company-description p{
+        display: block;
+        margin: auto;
+        max-width: 90%;
+    } */
 
     main section.introduction h2{
         padding-top:.7rem
@@ -196,4 +207,4 @@
         clear: right; 
     }  */
 
-};
+}

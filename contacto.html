@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,8 +29,8 @@
                 </li>
                 <li class="drop-trigger2" onclick="dropContent2()"> <span class="drop-trigger2" id="drop-menu2">Soporte &#8744;</span>
                     <ul id="support_dropdown" class="dropdown-content2">
-                        <li><a class="content" href="soporte.html">Soporte</a></li>
-                        <li><a class="content" href="http://sistemas.masqfactura.com/grid_Videos_1/" target="_blank">Modificaciones</a></li>
+                        <li><a class="content" href="contacto.html">Soporte</a></li>
+                        <li><a class="content" href="http://sistemas.masqfactura.com/grid_Videos_1/" target="_blank">Registro de Modificaciones</a></li>
                     </ul>
                 </li>
                 <li class="active"><a href="contacto.html">Contacto</a></li>
@@ -38,8 +38,8 @@
         </nav>
     </header>
     <main>
-        <section class="contact-info">
-            <h1>Informacion de Contacto</h1>
+        <section class="label-design">
+            <h1>Información de Contacto</h1>
             <picture>
                 <source media="(min-width:55rem)" srcset="images/getting_email_large2.jpg">
                 <img src="images/getting_email_medium2.jpg" alt="person_receiving_an_email">
@@ -52,23 +52,18 @@
                     <li>E-Mail: ventas@essistemas.net
                 </ul>
             </address>
-
         </section>
 
         <section class="form">
             <h2>Envianos un e-mail</h2>
-            <div class="contact-form">
-                <form action="https://formsubmit.co/6b2d02398b9fbf136a6c18c041f2ea0f" onsubmit="return validate()" method="POST">
-                <!-- Honeypot -->
-                <input type="text" name="_honey" style="display:none;">
-                <!-- Disable Captcha -->
-                <input type="hidden" name="_captcha" value="false">
-                        <label>Nombre*<input type="text" placeholder="Manuel" name="Nombre" required></label>
-                        <label>Apellido*<input type="text" placeholder="Ramirez" name="Apellido"required></label>
-                        <label>Email*<input type="email" name="Correo&nbsp;Electronico" placeholder="ejemplo@micorreo.com" required></label>
-                        <label>Telefono<input type="tel" name="Telefono" placeholder="+52-664-123-4567"></label>
+            <div class="label-design">
+                <form id="email-form" action="php/sendmails.php" onsubmit="verify();" method="POST">
+                        <label>Nombre(s)*<input type="text" placeholder="Manuel" name="Nombre" id="nombre" required></label>
+                        <label>Apellido(s)*<input type="text" placeholder="Ramirez" name="Apellido" id="apellido" required></label>
+                        <label>Email*<input type="email" name="Correo_Electronico" placeholder="ejemplo@micorreo.com" required></label>
+                        <label>Teléfono<input type="tel" name="Telefono" placeholder="+52-664-123-4567"></label>
                         <label>Estado*</label>
-                    <select id="state" name="Estado&nbsp;de&nbsp;Mexico">
+                    <select id="estado" name="Estado_de_Mexico">
                     <option value="none">-- Seleccione una opcion --</option>
                     <option value="Aguascalientes">Aguascalientes</option>
                     <option value="Baja California">Baja California</option>
@@ -102,9 +97,17 @@
                     <option value="Yucatan">Yucatan</option>
                     <option value="Zacatecas">Zacatecas</option>
                     </select>
-                        <label>Message: <textarea name="Preguntas&nbsp;y/o&nbsp;Comentarios" id="" cols="30" rows="10" placeholder="Escribe el mensaje aqui" required></textarea></label>
-                        <!-- <input type="hidden" id="custId" name="_next" value="https://pruebas.masqfactura.com/thankyou.html"> -->
-                        <input class="btn" type="submit" value="Enviar e-mail" required>
+                        <label>Mensaje*: <textarea name="Preguntas_y/o_Comentarios" id="" cols="30" rows="10" placeholder="Escribe el mensaje aqui" required></textarea></label>                        
+                        <div id="captchaBackground">
+                            <canvas id="captcha">captcha text</canvas>
+                            <input id="textBox" type="text" name="text">
+                            <span id="output"></span>
+                            <div id="buttons">
+                                <button id="submitButton" name="validateCaptcha" type="submit">Enviar e-mail</button>
+                                <button id="refreshButton"  type="button">Refrescar</button>
+                            </div>
+                        </div>
+                        <!-- <input class="btn" name="Submit" type="submit" id="submitForm" value="Enviar e-mail"> -->
                 </form>
             </div>
         </section>
@@ -120,11 +123,8 @@
     </footer>
     <script src="./js/navigator-button.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/captcha.js"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
     
 </body>
 </html>
-
-<!-- <picture>
-    <source media="(min-width:55rem)" srcset="images/phone_call_large.jpg">
-    <img src="images/phone_call_medium.jpg" alt="person_recieving_a_phone_call">
-</picture> -->

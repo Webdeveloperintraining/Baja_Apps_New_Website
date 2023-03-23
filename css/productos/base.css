@@ -5,7 +5,7 @@ h1,h2,h3,h4,h5{
     word-wrap:break-word;
 }
 
-p,li,a{
+p,li,a,figcaption{
     font-family: 'Cabin', sans-serif;    
     text-decoration: none;
 }
@@ -56,7 +56,7 @@ header nav img:hover{transform: scale(1.2);  transition: all .4s .2s;}
     transition: transform .4s .2s;
 }
 
-.three:hover, .three.open:hover{transform: scale(1.2); transition: transform .4s .2s;} 
+.three:hover, .three.open:hover{transform: scale(1.1); transition: transform .4s .2s;} 
 
 nav ul {
     padding: 0;
@@ -144,22 +144,42 @@ main img{
     display: block;
     margin: auto;
     width:80%;
+    max-width: 100%;
     box-shadow:2px 8px 10px black;
+    transition: all 1s;
+}
+
+img.price-table{
+    display: block;
+    margin: auto;
+    /* width:80%; */
+    max-width: 80%;
+    box-shadow:2px 8px 10px black;
+    transition: all 1s;
+}
+
+article iframe{
+    display: block;
+    margin: auto;
+    width: 100%;
+    /* transition: all .1s; */
 }
 
 div.reports  {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction:column;
     gap:1rem;
 }
 
-.imgmod {
+#myImg,#myImg2 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;   
 }
 
-  .imgmod:hover{opacity: 0.7;}
+#myImg:hover,#myImg2:hover{opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -177,7 +197,13 @@ div.reports  {
   }
   
   /* Modal Content (image) */
-.modal-content {
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width:70em;
+}
+
+  .modal-content2 {
     margin: auto;
     display: block;
     width: 80%;
@@ -217,7 +243,7 @@ div.reports  {
   
 
   /* The Close Button */
-.close {
+.close, .close2 {
     position: absolute;
     top: 15px;
     right: 35px;

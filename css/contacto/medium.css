@@ -1,4 +1,4 @@
-@media (min-width:40em) {
+@media only screen and (min-width:40em){
 /*Header & Navigation bar*/
 nav{
     display: flex;
@@ -96,19 +96,42 @@ li.drop-trigger.dropdown{
 /*Body*/ 
 
 main{
-    display: grid;
+    /* display: grid; */
+    display:block;
+    margin: auto;
+    justify-content: center;
 }
 
 main img{
     display:block;
     margin: auto;
     max-width: 80%;
+    width: 60%;
 }
 
-section.contact-info{
+section.label-design{
     display: flex;
     flex-direction: column;
 }
+
+div.label-design{
+    display:block;
+    margin: auto;
+    max-width: 100%;
+    width: 75%;
+}
+
+
+/* form label input{
+    width:90%;
+}
+select{
+    width:90%; 
+}
+
+textarea{
+    width: 90%;
+} */
 
 
 /*footer*/
